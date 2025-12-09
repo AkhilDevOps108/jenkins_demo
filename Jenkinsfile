@@ -5,6 +5,12 @@ pipeline {
         IMAGE_NAME = "app-1"
 }
 
+  triggers {
+     pollSCM('****')  
+  // Checks the github repo fievery min for new version
+
+    
+    
 stages   {
 
   stage(checkout code) {
